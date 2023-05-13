@@ -1,0 +1,28 @@
+.button {
+    height: 74px;
+    padding: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 48px;
+    
+
+    &--primary {
+        color: white;
+        background-color: blue;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 640px) {
+
+        display: block;
+        width: 100%;    
+        margin-top: 28px;
+        margin-left: 0;
+    }
+
+
+
+}

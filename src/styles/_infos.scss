@@ -1,0 +1,30 @@
+.infos-bar {
+    padding: 16px 24px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 80px;
+
+    &__infos {
+        margin-top: 28px;
+        margin-bottom: 28px;
+        
+
+        &__item {
+            font-size: 48px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        
+        &__infos {
+            margin: 18px;
+
+            &__item {
+                font-size: 24px;
+            }
+        }
+    }
+}

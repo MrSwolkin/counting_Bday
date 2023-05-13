@@ -1,0 +1,51 @@
+.hero {
+    padding-top: 128px;
+    padding-bottom: 180px;
+    background-image: url(../images/cake-1835443_1920.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: '';
+        opacity: 0.6;
+    }
+    text-align: center;
+
+    &__title {
+        margin-bottom: 16px;
+        padding: 18px;
+        font-size: 80px;
+        color: #fff;
+    }
+
+    &__text {
+        font-size: 70px;
+        color: #fff;
+        margin-bottom: 340px;
+    }
+
+    @media (max-width: 640px) {
+
+        padding: 40px 0 ;
+
+        &__title{
+            font-size: 58px;
+        }
+
+        &__text {
+            font-size: 32px;
+            margin-bottom: 48px;
+        }
+    }
+}
